@@ -21,23 +21,8 @@ If you already have *chasca* installed, you should consider upgrading to the lat
 
 Dependencies
 ------------
-The main dependencies of *kanchay* are  `lightkurve <https://docs.lightkurve.org/>`_, `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_. However, there are other dependences such as `PyMC3 <https://docs.pymc.io/en/v3/>`_, `PyMC3 Extras <https://pypi.org/project/pymc3-ext/>`_, and `celerite2 <https://pypi.org/project/celerite2/>`_. To properly install these codes, we strongly recomend following the instructions bellow::
+The main dependencies of *kanchay* is  `astroplan <https://astroplan.readthedocs.io/en/latest/>`_. However, there are other dependences such as `NumPy <https://numpy.org/>`_, `Astropy <https://www.astropy.org/>`_, `matplotlib <https://matplotlib.org/>`_, `regions <https://pypi.org/project/regions/>`_, `SciPy <https://scipy.org/>`_, `pandas <https://pandas.pydata.org/>`_, `PyPDF2 <https://pypi.org/project/PyPDF2/>`_, and `os <https://docs.python.org/3/library/os.html>`_. Please, make sure that all these dependences are properly installed.
 
-    conda install -c conda-forge pymc3 theano-pymc mkl mkl-service
-    python -m pip install lightkurve --upgrade
-    python -m pip install -U exoplanet
-    python -m pip install -U celerite2
-    python -m pip install -U pymc3-ext
-
-And finally install `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ from source::
-
-    git clone https://github.com/RuthAngus/starspot.git
-    cd starspot
-    python setup.py install
-
-Aditionally, *kanchay* needs LaTex to generate light curve plots. Follow this `link <https://milq.github.io/install-latex-ubuntu-debian/>`_ to install LaTex on Linux (linux mint, ubuntu, debian).
-
-Note that *kanchay* requires of Pandas < 1.4.
     
 Example usage
 -------------

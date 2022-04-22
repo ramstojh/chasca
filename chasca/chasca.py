@@ -54,7 +54,7 @@ class cha(object):
     
     @classmethod
     #finding chart
-    def fch_obs(self, starid, radius, by=None, ra=None, dec=None, savefig=None):
+    def fch_obs(self, starid, radius=None, by=None, ra=None, dec=None, savefig=None):
         
         if not savefig:
             savefig = 'no'
@@ -72,6 +72,10 @@ class cha(object):
             dec = []
         else:
             dec = dec
+        if not radius:
+            radius = 5
+        else:
+            radius = radius
         
         if by == 'id':
             target = ap.FixedTarget.from_name(starid)
@@ -81,7 +85,7 @@ class cha(object):
         
         #Plotting
         fig = plt.figure(figsize=(7,7))
-        axn, hdu = app.plot_finder_image(target, fov_radius=5*u.arcmin)
+        axn, hdu = app.plot_finder_image(target, fov_radius=radius*u.arcmin)
         
         wcs = WCS(hdu.header)
         wcs_im = wcs.celestial
@@ -265,7 +269,7 @@ class cha(object):
         
     @classmethod
     #all in one
-    def plan_all_obs(self, starid, site, time, radius, by=None, ra=None, dec=None):
+    def plan_all_obs(self, starid, site, time, radius=None, by=None, ra=None, dec=None):
         
         if not by:
             by = 'id'
@@ -279,6 +283,10 @@ class cha(object):
             dec = []
         else:
             dec = dec
+        if not radius:
+            radius = 5
+        else:
+            radius = radius
         
         if by == 'id':
             #visibility
@@ -316,7 +324,7 @@ class cha(object):
     
     @classmethod
     #multiple observations
-    def plan_mult_obs(self, starids, site, time, by=None, ra=None, dec=None):
+    def plan_mult_obs(self, starid, site, time, by=None, ra=None, dec=None):
         
         if not by:
             by = 'id'
@@ -478,5 +486,4 @@ class chatool(object):
         Texpf = texp1/pow(2.5, deltV)
         
         return Texpf
-
 

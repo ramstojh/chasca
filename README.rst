@@ -5,7 +5,7 @@ chasca
     :target: https://astroplan.readthedocs.io/en/latest/
 
     
-*chasca* means star in the Inca–Andean–Quechua cosmovision. *chasca* is a simple tool based on `astroplan <https://astroplan.readthedocs.io/en/latest/>`_  to plan astronomical observations. To exploid the full `astroplan <https://astroplan.readthedocs.io/en/latest/>`_ features plase see its tutorials.
+*chasca* was created to my own personal use, but it might be useful for someone else. *chasca* means star in the Inca–Andean–Quechua cosmovision. *chasca* is a simple tool based on `astroplan <https://astroplan.readthedocs.io/en/latest/>`_  to plan astronomical observations. To exploid the full `astroplan <https://astroplan.readthedocs.io/en/latest/>`_ features plase see its tutorials.
 
 
 Installation

@@ -1,28 +1,23 @@
 chasca
 ======
 
-.. image:: https://img.shields.io/badge/powered%20by-lightkurve-red
-    :target: https://docs.lightkurve.org/
+.. image:: https://img.shields.io/badge/powered%20by-astroplan-orange
+    :target: https://astroplan.readthedocs.io/en/latest/
 
-.. image:: https://img.shields.io/badge/powered%20by-starspot-red
-    :target: https://starspot.readthedocs.io/en/latest/index.html#/
-
-.. image:: https://img.shields.io/badge/powered%20by-exoplanet-red
-    :target: https://docs.exoplanet.codes/en/stable/
     
 *chasca* means star in the Inca–Andean–Quechua cosmovision. *chasca* is a simple tool based on `astroplan <https://astroplan.readthedocs.io/en/latest/>`_  to plan astronomical observations. To exploid the full `astroplan <https://astroplan.readthedocs.io/en/latest/>`_ features plase see its tutorials.
 
 
 Installation
 ------------
-Installing *kanchay* requires only one step. Please run the following pip command::
+Installing *chasca* requires only one step. Please run the following pip command::
 
-    pip install kanchay
+    pip install chasca
 
 Note that you will need Python (>=3.7-3.9) installed.
-If you already have *terra* installed, you should consider upgrading to the latest version via::
+If you already have *chasca* installed, you should consider upgrading to the latest version via::
 
-    pip install kanchay --upgrade
+    pip install chasca --upgrade
 
 Dependencies
 ------------

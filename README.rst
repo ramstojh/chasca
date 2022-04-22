@@ -10,7 +10,7 @@ chasca
 .. image:: https://img.shields.io/badge/powered%20by-exoplanet-red
     :target: https://docs.exoplanet.codes/en/stable/
     
-*chasca* means light in the Inca–Andean–Quechua cosmovision. *chasca* is a simple tool based on `lightkurve <https://docs.lightkurve.org/>`_, `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_ codes to download light curves and measure their rotational periods using methods such as Lomb-Scargle Periodograms (LS), autocorrelation functions (ACFs), Phase Dispersion Minimization (PDM), and Gaussian Processes (GPs). Such methods are well described in `starspot <https://starspot.readthedocs.io/en/latest/index.html#/>`_ and `exoplanet <https://docs.exoplanet.codes/en/stable//>`_.
+*chasca* means star in the Inca–Andean–Quechua cosmovision. *chasca* is a simple tool based on `astroplan <https://astroplan.readthedocs.io/en/latest/>`_  to plan astronomical observations. To exploid the full `astroplan <https://astroplan.readthedocs.io/en/latest/>`_ features plase see its tutorials.
 
 
 Installation
